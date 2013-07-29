@@ -1,0 +1,6 @@
+<% if @load_wait %>
+<h1 id="loading_followers" data-username="<%=@user.name%>">Followers are loading...</h1>
+<%else%>
+<%= erb :_followers_partial %>
+<% end %>
+

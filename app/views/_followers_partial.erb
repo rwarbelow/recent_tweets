@@ -1,0 +1,20 @@
+<div id="recentfollowers">
+<h1><%= @user.name %>'s all followers</h1>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Handle</th>
+  </thead>
+  <% @followers.reverse.each do |f| %>
+    <tr>
+      <td>
+        <%= f.full_name %>
+      </td>
+      <td>
+        <%= f.user_name %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+</div>
